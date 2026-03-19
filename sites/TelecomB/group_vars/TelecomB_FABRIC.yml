@@ -1,5 +1,5 @@
 ---
-fabric_name: SITE2_FABRIC
+fabric_name: TelecomB_FABRIC
 
 # Spine Switches
 spine:

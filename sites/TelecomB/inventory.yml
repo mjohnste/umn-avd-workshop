@@ -1,16 +1,16 @@
 ---
-SITE2:
+TelecomB:
   children:
     CVP:
       hosts:
         cvp:
-    SITE2_FABRIC:
+    TelecomB_FABRIC:
       children:
-        SITE2_SPINES:
+        TelecomB_SPINES:
           hosts:
             TelecomB-DS-1:
             TelecomB-DS-2:
-        SITE2_LEAFS:
+        TelecomB_LEAFS:
           hosts:
             TelecomB-DV-1:
             TelecomB-DV-2:
@@ -18,11 +18,11 @@ SITE2:
             TelecomB-DL-2:
             TelecomB-DB-1:
             TelecomB-DB-2:
-    SITE2_NETWORK_SERVICES:
+    TelecomB_NETWORK_SERVICES:
       children:
-        SITE2_SPINES:
-        SITE2_LEAFS:
-    SITE2_CONNECTED_ENDPOINTS:
+        TelecomB_SPINES:
+        TelecomB_LEAFS:
+    TelecomB_CONNECTED_ENDPOINTS:
       children:
-        SITE2_SPINES:
-        SITE2_LEAFS:
+        TelecomB_SPINES:
+        TelecomB_LEAFS:

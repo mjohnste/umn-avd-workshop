@@ -17,7 +17,7 @@ port_profiles:
 # servers:
 
 # # --------------------------------------------------------#
-# # Site1 RACK1 Endpoints
+# # AOC RACK1 Endpoints
 # # --------------------------------------------------------#
 
 #   - name: AOC-HOST-1                                      # Server name
@@ -31,7 +31,7 @@ port_profiles:
 #           mode: active
 
 # # --------------------------------------------------------#
-# # Site1 RACK2 Endpoints
+# # AOC RACK2 Endpoints
 # # --------------------------------------------------------#
 
 #   - name: AOC-HOST-2                                      # Server name

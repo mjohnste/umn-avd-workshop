@@ -1,5 +1,5 @@
 ---
-fabric_name: SITE1_FABRIC
+fabric_name: AOC_FABRIC
 
 # Spine Switches
 spine:

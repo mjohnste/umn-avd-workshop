@@ -1,16 +1,16 @@
 ---
-SITE1:
+AOC:
   children:
     CVP:
       hosts:
         cvp:
-    SITE1_FABRIC:
+    AOC_FABRIC:
       children:
-        SITE1_SPINES:
+        AOC_SPINES:
           hosts:
             AOC-DS-1:
             AOC-DS-2:
-        SITE1_LEAFS:
+        AOC_LEAFS:
           hosts:
             AOC-DV-1:
             AOC-DV-2:
@@ -18,11 +18,11 @@ SITE1:
             AOC-DL-2:
             AOC-DB-1:
             AOC-DB-2:
-    SITE1_NETWORK_SERVICES:
+    AOC_NETWORK_SERVICES:
       children:
-        SITE1_SPINES:
-        SITE1_LEAFS:
-    SITE1_CONNECTED_ENDPOINTS:
+        AOC_SPINES:
+        AOC_LEAFS:
+    AOC_CONNECTED_ENDPOINTS:
       children:
-        SITE1_SPINES:
-        SITE1_LEAFS:
+        AOC_SPINES:
+        AOC_LEAFS:

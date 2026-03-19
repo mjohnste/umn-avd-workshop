@@ -17,7 +17,7 @@ port_profiles:
 # servers:
 
 # # --------------------------------------------------------#
-# # Site2 RACK1 Endpoints
+# # TelecomB RACK1 Endpoints
 # # --------------------------------------------------------#
 
 #   - name: TelecomB-HOST-1                                      # Server name
@@ -31,7 +31,7 @@ port_profiles:
 #           mode: active
 
 # # --------------------------------------------------------#
-# # Site2 RACK2 Endpoints
+# # TelecomB RACK2 Endpoints
 # # --------------------------------------------------------#
 
 #   - name: TelecomB-HOST-2                                      # Server name
