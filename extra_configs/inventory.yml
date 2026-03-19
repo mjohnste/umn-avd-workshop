@@ -2,10 +2,50 @@
 LAB:
   hosts:
     AOC-CORE-1:
+      ansible_host: 192.168.0.102
     AOC-CORE-2:
+      ansible_host: 192.168.0.103
     AOC-HOST-1:
+      ansible_host: 192.168.0.16
     AOC-HOST-2:
+      ansible_host: 192.168.0.17
     TelecomB-CORE-1:
+      ansible_host: 192.168.0.202
     TelecomB-CORE-2:
+      ansible_host: 192.168.0.203
     TelecomB-HOST-1:
+      ansible_host: 192.168.0.26
     TelecomB-HOST-2:
+      ansible_host: 192.168.0.27
+    AOC-DS-1:
+      ansible_host: 192.168.0.10
+    AOC-DS-2:
+      ansible_host: 192.168.0.11
+    AOC-DV-1:
+      ansible_host: 192.168.0.12
+    AOC-DV-2:
+      ansible_host: 192.168.0.13
+    AOC-DL-1:
+      ansible_host: 192.168.0.14
+    AOC-DL-2:
+      ansible_host: 192.168.0.15
+    AOC-DB-1:
+      ansible_host: 192.168.0.100
+    AOC-DB-2:
+      ansible_host: 192.168.0.101
+    TelecomB-DS-1:
+      ansible_host: 192.168.0.20
+    TelecomB-DS-2:
+      ansible_host: 192.168.0.21
+    TelecomB-DV-1:
+      ansible_host: 192.168.0.22
+    TelecomB-DV-2:
+      ansible_host: 192.168.0.23
+    TelecomB-DL-1:
+      ansible_host: 192.168.0.24
+    TelecomB-DL-2:
+      ansible_host: 192.168.0.25
+    TelecomB-DB-1:
+      ansible_host: 192.168.0.200
+    TelecomB-DB-2:
+      ansible_host: 192.168.0.201
