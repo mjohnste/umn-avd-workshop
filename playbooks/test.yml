@@ -11,5 +11,6 @@
       with_items:
         - "../global_vars/global_dc_vars.yml"
 
-    - name: Ping Hosts
-      ping:
+    - name: Debug
+      debug:
+        msg: "{{ ansible_password }}"
