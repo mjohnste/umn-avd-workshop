@@ -88,10 +88,10 @@ bgp_peer_groups:
 #   # Define each P2P L3 link and link the nodes, the interfaces and the profile used.
 #   p2p_links:
 #     - id: 1
-#       nodes: [ s1-brdr1, s2-brdr1 ]
+#       nodes: [ AOC-DB-1, TelecomB-DB-1 ]
 #       interfaces: [ Ethernet4, Ethernet4 ]
 #       profile: S1_to_S2_profile
 #     - id: 2
-#       nodes: [ s1-brdr2, s2-brdr2 ]
+#       nodes: [ AOC-DB-2, TelecomB-DB-2 ]
 #       interfaces: [ Ethernet5, Ethernet5 ]
 #       profile: S1_to_S2_profile

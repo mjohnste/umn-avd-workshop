@@ -8,16 +8,16 @@ SITE1:
       children:
         SITE1_SPINES:
           hosts:
-            s1-spine1:
-            s1-spine2:
+            AOC-DS-1:
+            AOC-DS-2:
         SITE1_LEAFS:
           hosts:
-            s1-leaf1:
-            s1-leaf2:
-            s1-leaf3:
-            s1-leaf4:
-            s1-brdr1:
-            s1-brdr2:
+            AOC-DV-1:
+            AOC-DV-2:
+            AOC-DL-1:
+            AOC-DL-2:
+            AOC-DB-1:
+            AOC-DB-2:
     SITE1_NETWORK_SERVICES:
       children:
         SITE1_SPINES:

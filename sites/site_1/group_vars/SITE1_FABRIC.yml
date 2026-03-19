@@ -8,10 +8,10 @@ spine:
     loopback_ipv4_pool: 10.250.1.0/24
     bgp_as: 65100
   nodes:
-    - name: s1-spine1
+    - name: AOC-DS-1
       id: 1
       mgmt_ip: 192.168.0.10/24
-    - name: s1-spine2
+    - name: AOC-DS-2
       id: 2
       mgmt_ip: 192.168.0.11/24
 
@@ -23,7 +23,7 @@ l3leaf:
     loopback_ipv4_pool: 10.250.1.0/24
     loopback_ipv4_offset: 2
     vtep_loopback_ipv4_pool: 10.255.1.0/24
-    uplink_switches: [ s1-spine1, s1-spine2 ]
+    uplink_switches: [ AOC-DS-1, AOC-DS-2 ]
     uplink_interfaces: [ Ethernet2, Ethernet3 ]
     uplink_ipv4_pool: 172.16.1.0/24
     mlag_interfaces: [ Ethernet1, Ethernet6 ]
@@ -34,22 +34,22 @@ l3leaf:
     - group: S1_RACK1
       bgp_as: 65101
       nodes:
-        - name: s1-leaf1
+        - name: AOC-DV-1
           id: 1
           mgmt_ip: 192.168.0.12/24
           uplink_switch_interfaces: [ Ethernet2, Ethernet2 ]
-        - name: s1-leaf2
+        - name: AOC-DV-2
           id: 2
           mgmt_ip: 192.168.0.13/24
           uplink_switch_interfaces: [ Ethernet3, Ethernet3 ]
     - group: S1_RACK2
       bgp_as: 65102
       nodes:
-        - name: s1-leaf3
+        - name: AOC-DL-1
           id: 3
           mgmt_ip: 192.168.0.14/24
           uplink_switch_interfaces: [ Ethernet4, Ethernet4 ]
-        - name: s1-leaf4
+        - name: AOC-DL-2
           id: 4
           mgmt_ip: 192.168.0.15/24
           uplink_switch_interfaces: [ Ethernet5, Ethernet5 ]
@@ -62,21 +62,21 @@ l3leaf:
       #     enabled: true
       #     inter_domain: true
       nodes:
-        - name: s1-brdr1
+        - name: AOC-DB-1
           id: 5
           mgmt_ip: 192.168.0.100/24
           uplink_switch_interfaces: [ Ethernet7, Ethernet7 ]
           # evpn_gateway:
           #   remote_peers:
-          #     - hostname: s2-brdr1
+          #     - hostname: TelecomB-DB-1
           #       bgp_as: 65203
           #       ip_address: 10.250.2.7
-        - name: s1-brdr2
+        - name: AOC-DB-2
           id: 6
           mgmt_ip: 192.168.0.101/24
           uplink_switch_interfaces: [ Ethernet8, Ethernet8 ]
           # evpn_gateway:
           #   remote_peers:
-          #     - hostname: s2-brdr2
+          #     - hostname: TelecomB-DB-2
           #       bgp_as: 65203
           #       ip_address: 10.250.2.8
