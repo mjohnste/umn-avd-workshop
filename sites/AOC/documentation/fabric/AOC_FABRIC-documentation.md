@@ -37,24 +37,18 @@
 
 | Type | Node | Node Interface | Peer Type | Peer Node | Peer Interface |
 | ---- | ---- | -------------- | --------- | ----------| -------------- |
-| l3leaf | AOC-DB-1 | Ethernet1 | mlag_peer | AOC-DB-2 | Ethernet1 |
 | l3leaf | AOC-DB-1 | Ethernet2 | spine | AOC-DS-1 | Ethernet7 |
 | l3leaf | AOC-DB-1 | Ethernet3 | spine | AOC-DS-2 | Ethernet7 |
-| l3leaf | AOC-DB-1 | Ethernet6 | mlag_peer | AOC-DB-2 | Ethernet6 |
 | l3leaf | AOC-DB-2 | Ethernet2 | spine | AOC-DS-1 | Ethernet8 |
 | l3leaf | AOC-DB-2 | Ethernet3 | spine | AOC-DS-2 | Ethernet8 |
-| l3leaf | AOC-DL-1 | Ethernet1 | mlag_peer | AOC-DL-2 | Ethernet1 |
 | l3leaf | AOC-DL-1 | Ethernet2 | spine | AOC-DS-1 | Ethernet4 |
 | l3leaf | AOC-DL-1 | Ethernet3 | spine | AOC-DS-2 | Ethernet4 |
-| l3leaf | AOC-DL-1 | Ethernet6 | mlag_peer | AOC-DL-2 | Ethernet6 |
 | l3leaf | AOC-DL-2 | Ethernet2 | spine | AOC-DS-1 | Ethernet5 |
 | l3leaf | AOC-DL-2 | Ethernet3 | spine | AOC-DS-2 | Ethernet5 |
 | spine | AOC-DS-1 | Ethernet2 | l3leaf | AOC-DV-1 | Ethernet2 |
 | spine | AOC-DS-1 | Ethernet3 | l3leaf | AOC-DV-2 | Ethernet2 |
 | spine | AOC-DS-2 | Ethernet2 | l3leaf | AOC-DV-1 | Ethernet3 |
 | spine | AOC-DS-2 | Ethernet3 | l3leaf | AOC-DV-2 | Ethernet3 |
-| l3leaf | AOC-DV-1 | Ethernet1 | mlag_peer | AOC-DV-2 | Ethernet1 |
-| l3leaf | AOC-DV-1 | Ethernet6 | mlag_peer | AOC-DV-2 | Ethernet6 |
 
 ## Fabric IP Allocation
 
@@ -91,14 +85,14 @@
 
 | POD | Node | Loopback0 |
 | --- | ---- | --------- |
-| AOC_FABRIC | AOC-DB-1 | 10.250.1.7/32 |
-| AOC_FABRIC | AOC-DB-2 | 10.250.1.8/32 |
-| AOC_FABRIC | AOC-DL-1 | 10.250.1.5/32 |
-| AOC_FABRIC | AOC-DL-2 | 10.250.1.6/32 |
-| AOC_FABRIC | AOC-DS-1 | 10.250.1.1/32 |
-| AOC_FABRIC | AOC-DS-2 | 10.250.1.2/32 |
-| AOC_FABRIC | AOC-DV-1 | 10.250.1.3/32 |
-| AOC_FABRIC | AOC-DV-2 | 10.250.1.4/32 |
+| AOC_FABRIC | AOC-DB-1 | 10.250.1.5/32 |
+| AOC_FABRIC | AOC-DB-2 | 10.250.1.6/32 |
+| AOC_FABRIC | AOC-DL-1 | 10.250.1.3/32 |
+| AOC_FABRIC | AOC-DL-2 | 10.250.1.4/32 |
+| AOC_FABRIC | AOC-DS-1 | 10.250.1.101/32 |
+| AOC_FABRIC | AOC-DS-2 | 10.250.1.102/32 |
+| AOC_FABRIC | AOC-DV-1 | 10.250.1.1/32 |
+| AOC_FABRIC | AOC-DV-2 | 10.250.1.2/32 |
 
 ### VTEP Loopback VXLAN Tunnel Source Interfaces (VTEPs Only)
 
@@ -110,9 +104,9 @@
 
 | POD | Node | Loopback1 |
 | --- | ---- | --------- |
-| AOC_FABRIC | AOC-DB-1 | 10.255.1.7/32 |
-| AOC_FABRIC | AOC-DB-2 | 10.255.1.7/32 |
-| AOC_FABRIC | AOC-DL-1 | 10.255.1.5/32 |
-| AOC_FABRIC | AOC-DL-2 | 10.255.1.5/32 |
-| AOC_FABRIC | AOC-DV-1 | 10.255.1.3/32 |
-| AOC_FABRIC | AOC-DV-2 | 10.255.1.3/32 |
+| AOC_FABRIC | AOC-DB-1 | 10.255.1.5/32 |
+| AOC_FABRIC | AOC-DB-2 | 10.255.1.6/32 |
+| AOC_FABRIC | AOC-DL-1 | 10.255.1.3/32 |
+| AOC_FABRIC | AOC-DL-2 | 10.255.1.4/32 |
+| AOC_FABRIC | AOC-DV-1 | 10.255.1.1/32 |
+| AOC_FABRIC | AOC-DV-2 | 10.255.1.2/32 |
