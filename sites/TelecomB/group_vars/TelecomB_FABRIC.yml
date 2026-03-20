@@ -47,6 +47,7 @@ l3leaf:
           uplink_switch_interfaces: [ Ethernet3, Ethernet3 ]
     - group: S2_RACK2
       # bgp_as: 65202
+      mlag: false
       nodes:
         - name: TelecomB-DL-1
           bgp_as: 65203
@@ -60,6 +61,7 @@ l3leaf:
           uplink_switch_interfaces: [ Ethernet5, Ethernet5 ]
     - group: S2_BRDR
       # bgp_as: 65203
+      mlag: false
       evpn_gateway:
         evpn_l2:
           enabled: true

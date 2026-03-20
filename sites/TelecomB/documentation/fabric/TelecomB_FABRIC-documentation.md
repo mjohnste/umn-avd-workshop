@@ -37,16 +37,12 @@
 
 | Type | Node | Node Interface | Peer Type | Peer Node | Peer Interface |
 | ---- | ---- | -------------- | --------- | ----------| -------------- |
-| l3leaf | TelecomB-DB-1 | Ethernet1 | mlag_peer | TelecomB-DB-2 | Ethernet1 |
 | l3leaf | TelecomB-DB-1 | Ethernet2 | spine | TelecomB-DS-1 | Ethernet7 |
 | l3leaf | TelecomB-DB-1 | Ethernet3 | spine | TelecomB-DS-2 | Ethernet7 |
-| l3leaf | TelecomB-DB-1 | Ethernet6 | mlag_peer | TelecomB-DB-2 | Ethernet6 |
 | l3leaf | TelecomB-DB-2 | Ethernet2 | spine | TelecomB-DS-1 | Ethernet8 |
 | l3leaf | TelecomB-DB-2 | Ethernet3 | spine | TelecomB-DS-2 | Ethernet8 |
-| l3leaf | TelecomB-DL-1 | Ethernet1 | mlag_peer | TelecomB-DL-2 | Ethernet1 |
 | l3leaf | TelecomB-DL-1 | Ethernet2 | spine | TelecomB-DS-1 | Ethernet4 |
 | l3leaf | TelecomB-DL-1 | Ethernet3 | spine | TelecomB-DS-2 | Ethernet4 |
-| l3leaf | TelecomB-DL-1 | Ethernet6 | mlag_peer | TelecomB-DL-2 | Ethernet6 |
 | l3leaf | TelecomB-DL-2 | Ethernet2 | spine | TelecomB-DS-1 | Ethernet5 |
 | l3leaf | TelecomB-DL-2 | Ethernet3 | spine | TelecomB-DS-2 | Ethernet5 |
 | spine | TelecomB-DS-1 | Ethernet2 | l3leaf | TelecomB-DV-1 | Ethernet2 |
@@ -109,8 +105,8 @@
 | POD | Node | Loopback1 |
 | --- | ---- | --------- |
 | TelecomB_FABRIC | TelecomB-DB-1 | 10.255.2.5/32 |
-| TelecomB_FABRIC | TelecomB-DB-2 | 10.255.2.5/32 |
+| TelecomB_FABRIC | TelecomB-DB-2 | 10.255.2.6/32 |
 | TelecomB_FABRIC | TelecomB-DL-1 | 10.255.2.3/32 |
-| TelecomB_FABRIC | TelecomB-DL-2 | 10.255.2.3/32 |
+| TelecomB_FABRIC | TelecomB-DL-2 | 10.255.2.4/32 |
 | TelecomB_FABRIC | TelecomB-DV-1 | 10.255.2.1/32 |
 | TelecomB_FABRIC | TelecomB-DV-2 | 10.255.2.2/32 |
