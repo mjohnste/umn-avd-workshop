@@ -15,7 +15,7 @@ In GitHub, fork the following [repository](https://github.com/mthiel117/umn-avd-
 
 **STEP #2 - Clone Forked Repository to Lab environment**
 
-Replace xxxxxxxxx with yoiur github path.
+Replace xxxxxxxxx with your github path.
 
 ```bash
 cd labfiles
@@ -24,7 +24,7 @@ git clone https://github.com/xxxxxxxxxx/umn-avd-workshop.git
 
 **STEP #3 - Add Git Settings**
 
-Setup Git config for your username and email.  These values are used for Git commits and logs.
+Setup Git config with your username and email.  This is needed for Git commits and logs.
 
 ```bash
 git config --global user.name "FirstName LastName"
@@ -48,6 +48,8 @@ make reset_to_undefined
 ```
 
 **STEP #6 - Apply base configs to Lab nodes**
+
+Applies base configs and changes the hostnames to match custom lab for UMN.
 
 ```bash
 make preplab
