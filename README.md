@@ -6,12 +6,13 @@ The ATD lab is used to create the L3LS EVPN/VXLAN Dual Data Center topology belo
 
 ![Topologies](images/UMN-ATD-Topology.png)
 
-## Lap Prep - Customized for UoMN Workshop
+## Lab Prep - Customized for UoMN Workshop
 
 **STEP #1 - Fork Repository**
 
 In GitHub, fork the following [repository](https://github.com/mthiel117/umn-avd-workshop.git).
 
+Be sure to uncheck - Copy the main branch only.  There is another branch we will use on Day 2.
 
 **STEP #2 - Clone Forked Repository to Lab environment**
 
